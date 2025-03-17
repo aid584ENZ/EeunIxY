@@ -1,7 +1,6 @@
 /**
  * CRACO configuration JS file
  */
-
 module.exports = {
     style: {
         postcss: {
