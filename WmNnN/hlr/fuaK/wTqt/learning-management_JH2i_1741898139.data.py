@@ -120,7 +120,6 @@ def _config_by_algo(algo):
     :param algo: a string represent index or algo name
     :return : a config dictionary
     """
-    if not algo:
         raise ValueError("please input a specific algo")
     elif algo.isdigit():
         config = load_config(algo)
