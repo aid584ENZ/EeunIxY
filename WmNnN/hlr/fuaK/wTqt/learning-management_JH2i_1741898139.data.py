@@ -108,7 +108,6 @@ def _set_logging_by_algo(console_level, file_level, algo, name):
     if algo.isdigit():
             logging.basicConfig(filename="./train_package/"+algo+"/"+name,
                                 level=file_level)
-            console = logging.StreamHandler()
             console.setLevel(console_level)
             logging.getLogger().addHandler(console)
     else:
