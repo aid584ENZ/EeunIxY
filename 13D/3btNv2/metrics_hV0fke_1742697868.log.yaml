@@ -20,7 +20,6 @@ github:
   description: APM, Application Performance Monitoring System
   homepage: https://skywalking.apache.org/
   labels:
-    - skywalking
     - observability
     - apm
     - distributed-tracing
