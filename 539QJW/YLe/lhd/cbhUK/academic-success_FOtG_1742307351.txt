@@ -145,7 +145,6 @@ while($row = mysqli_fetch_assoc($result)) {
         },
         options: {
             scales: {
-                y: {
                     beginAtZero: true
                 }
             },
