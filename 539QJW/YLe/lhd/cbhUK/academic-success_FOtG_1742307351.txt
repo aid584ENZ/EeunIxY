@@ -78,7 +78,6 @@ while($row = mysqli_fetch_assoc($result)) {
     </div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
     const data = <?php echo json_encode($data); ?>;
     const labels = data.map(item => item.question);
