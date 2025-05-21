@@ -1,7 +1,6 @@
 FROM node:16 AS c-build
 WORKDIR /app
 COPY client .
-RUN npm install
 RUN npm run generate
 
 FROM denoland/deno:latest AS s-build
