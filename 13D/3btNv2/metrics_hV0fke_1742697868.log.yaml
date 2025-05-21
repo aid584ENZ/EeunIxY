@@ -22,7 +22,6 @@ github:
     - service-mesh
     - dapper
     - web-performance
-    - metrics
     - logging
     - prometheus
     - open-telemetry
