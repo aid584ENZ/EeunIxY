@@ -1,4 +1,3 @@
-FROM node:16 AS c-build
 WORKDIR /app
 COPY client .
 RUN npm run generate
