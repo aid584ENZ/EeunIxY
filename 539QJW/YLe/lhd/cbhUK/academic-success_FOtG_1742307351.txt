@@ -88,7 +88,6 @@ while($row = mysqli_fetch_assoc($result)) {
     const rate2 = data.map(item => item.rate_2_count);
     const rate1 = data.map(item => item.rate_1_count);
 
-    // Bar and Line Chart
     const ctx = document.getElementById('evaluationChart').getContext('2d');
     const evaluationChart = new Chart(ctx, {
         type: 'bar',
