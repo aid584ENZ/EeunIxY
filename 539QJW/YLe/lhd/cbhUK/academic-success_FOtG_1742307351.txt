@@ -14,7 +14,6 @@ function ordinal_suffix1($num) {
 }
 
 $astat = array("Not Yet Started", "On-going", "Closed");
-
 $query = "SELECT 
             e.evaluation_id,
             e.subject_id,
