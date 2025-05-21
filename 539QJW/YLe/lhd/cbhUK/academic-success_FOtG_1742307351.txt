@@ -190,7 +190,6 @@ while($row = mysqli_fetch_assoc($result)) {
     const pieChart = new Chart(pieCtx, {
         type: 'pie',
         data: pieData,
-        options: {
             responsive: true,
             plugins: {
                 legend: {
