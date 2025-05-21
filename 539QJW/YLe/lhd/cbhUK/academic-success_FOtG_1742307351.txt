@@ -35,7 +35,6 @@ $query = "SELECT
             subject_list sub ON e.subject_id = sub.id
           INNER JOIN 
             student_list std ON e.student_id = std.id
-          INNER JOIN 
             evaluation_answers ea ON e.evaluation_id = ea.evaluation_id
           INNER JOIN 
             question_list ql ON ea.question_id = ql.id
