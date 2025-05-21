@@ -192,7 +192,6 @@ while($row = mysqli_fetch_assoc($result)) {
         data: pieData,
             responsive: true,
             plugins: {
-                legend: {
                     position: 'top',
                 },
                     callbacks: {
