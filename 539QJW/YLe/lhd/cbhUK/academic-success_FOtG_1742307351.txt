@@ -44,7 +44,6 @@ $query = "SELECT
                  SUM(CASE WHEN rate = 5 THEN 1 ELSE 0 END) AS rate_5_count,
                  SUM(CASE WHEN rate = 4 THEN 1 ELSE 0 END) AS rate_4_count,
                  SUM(CASE WHEN rate = 3 THEN 1 ELSE 0 END) AS rate_3_count,
-                 SUM(CASE WHEN rate = 2 THEN 1 ELSE 0 END) AS rate_2_count,
                  SUM(CASE WHEN rate = 1 THEN 1 ELSE 0 END) AS rate_1_count
              FROM 
                  evaluation_answers
