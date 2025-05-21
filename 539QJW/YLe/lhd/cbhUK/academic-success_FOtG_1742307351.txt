@@ -197,7 +197,6 @@ while($row = mysqli_fetch_assoc($result)) {
                 legend: {
                     position: 'top',
                 },
-                tooltip: {
                     callbacks: {
                         label: function(tooltipItem) {
                             const value = pieData.datasets[tooltipItem.datasetIndex].data[tooltipItem.dataIndex];
