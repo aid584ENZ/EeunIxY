@@ -1,6 +1,5 @@
 <?php
 include('db_connect.php'); // Include the database connection
-
 // Function to add ordinal suffixes to numbers
 function ordinal_suffix1($num) {
     $num = $num % 100; // Protect against large numbers
