@@ -8,7 +8,6 @@ FROM denoland/deno:latest AS s-build
 WORKDIR /
 COPY server server
 RUN deno bundle --unstable server/app.ts /app.js
-
 FROM denoland/deno:latest
 WORKDIR /
 COPY --from=c-build /app/dist /dist/static
