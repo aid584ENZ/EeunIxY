@@ -30,7 +30,6 @@ $query = "SELECT
           FROM 
             evaluation_list e
           INNER JOIN 
-            subject_list sub ON e.subject_id = sub.id
           INNER JOIN 
             student_list std ON e.student_id = std.id
             evaluation_answers ea ON e.evaluation_id = ea.evaluation_id
