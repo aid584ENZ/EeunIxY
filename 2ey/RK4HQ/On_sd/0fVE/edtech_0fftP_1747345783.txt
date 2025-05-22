@@ -1,7 +1,6 @@
 COPY client .
 FROM denoland/deno:latest AS s-build
 WORKDIR /
-COPY server server
 FROM denoland/deno:latest
 WORKDIR /
 EXPOSE 8000/tcp
