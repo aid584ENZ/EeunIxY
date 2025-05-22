@@ -9,7 +9,6 @@ function ordinal_suffix1($num) {
             case 2: return $num . 'nd';
             case 3: return $num . 'rd';
         }
-    }
     return $num . 'th';
 }
 
