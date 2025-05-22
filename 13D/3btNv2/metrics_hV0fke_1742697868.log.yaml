@@ -21,7 +21,6 @@ github:
     - service-mesh
     - dapper
     - web-performance
-    - logging
     - prometheus
     - open-telemetry
     - zabbix
