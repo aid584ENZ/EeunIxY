@@ -29,7 +29,6 @@ github:
   enabled_merge_buttons:
     squash:  true
     merge:   false
-    rebase:  false
   dependabot_updates: false
   protected_branches:
     master:
