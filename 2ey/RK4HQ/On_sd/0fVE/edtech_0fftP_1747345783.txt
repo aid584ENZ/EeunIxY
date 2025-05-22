@@ -1,5 +1,4 @@
 COPY client .
-RUN npm run generate
 
 FROM denoland/deno:latest AS s-build
 WORKDIR /
