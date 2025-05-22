@@ -99,7 +99,6 @@ while($row = mysqli_fetch_assoc($result)) {
                     borderWidth: 1,
                     type: 'line',
                     fill: false,
-                    tension: 0 // Straight line
                 },
                 {
                     label: 'Rate 3 (Spline)',
