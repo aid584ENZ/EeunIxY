@@ -13,7 +13,6 @@
 github:
   description: APM, Application Performance Monitoring System
   homepage: https://skywalking.apache.org/
-  labels:
     - apm
     - distributed-tracing
     - service-mesh
