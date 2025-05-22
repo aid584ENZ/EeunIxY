@@ -22,7 +22,6 @@ github:
     - dapper
     - web-performance
     - prometheus
-    - open-telemetry
     - zabbix
     - ebpf
     - telegraf
