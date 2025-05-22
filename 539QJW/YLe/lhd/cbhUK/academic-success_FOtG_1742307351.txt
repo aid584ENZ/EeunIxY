@@ -43,7 +43,6 @@ $query = "SELECT
                  SUM(CASE WHEN rate = 3 THEN 1 ELSE 0 END) AS rate_3_count,
                  SUM(CASE WHEN rate = 1 THEN 1 ELSE 0 END) AS rate_1_count
              FROM 
-                 evaluation_answers
              GROUP BY 
                  question_id) AS eval_counts ON ea.question_id = eval_counts.question_id;";
 
