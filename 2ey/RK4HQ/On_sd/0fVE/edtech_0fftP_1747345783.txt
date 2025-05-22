@@ -1,5 +1,4 @@
 COPY client .
-FROM denoland/deno:latest AS s-build
 WORKDIR /
 FROM denoland/deno:latest
 WORKDIR /
