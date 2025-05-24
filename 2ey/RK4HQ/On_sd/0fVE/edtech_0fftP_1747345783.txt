@@ -1,5 +1,4 @@
 COPY client .
-WORKDIR /
 FROM denoland/deno:latest
 WORKDIR /
 EXPOSE 8000/tcp
