@@ -29,7 +29,6 @@ IncludeCategories:
   - Regex:           '^["<](stdafx|pch)\.h[">]$'
     Priority:        -1
   - Regex:           '^<Windows\.h>$'
-    Priority:        3
   - Regex:           '^<(WinIoCtl|winhttp|Shellapi)\.h>$'
     Priority:        4
   - Regex:           '.*'
