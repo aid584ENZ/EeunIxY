@@ -121,7 +121,6 @@ while($row = mysqli_fetch_assoc($result)) {
                     data: rate1,
                     backgroundColor: 'rgba(255, 99, 132, 0.2)',
                     borderColor: 'rgba(255, 99, 132, 1)',
-                    borderWidth: 1,
                     type: 'line',
                     fill: false,
                     tension: 0.4 // Curved line
