@@ -1,9 +1,64 @@
+以下是优化后的代码片段：
+
+```env
+# Firebase Configuration
 FIREBASE_API_KEY=AIzaXXXXXXXX-XXXXXXXXXXXXXX-XXX
 FIREBASE_PROJECT_ID=xxx
 FIREBASE_ADMIN_CLIENT_EMAIL=firebase-adminsdk-xxx@xxx.iam.gserviceaccount.com
 FIREBASE_ADMIN_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\nXXX\n-----END PRIVATE KEY-----\n"
 FIREBASE_AUTH_TENANT_ID=your-tenant-id-xxxx
 
-# Setup for AppCheck
+# AppCheck Configuration
 FIREBASE_APP_CHECK_KEY=XXxxxxXxXXXXXXXxxxXxxxXXXxxXXXXxxxxxXX_X
 FIREBASE_APP_ID=x:xxxxxxxxxxxx:web:xxxxxxxxxxxxxxxxxxxxxx
+```
+
+以下是实现登录流程的伪代码：
+
+```javascript
+// 登录流程伪代码
+function login(email, password) {
+  // 使用 Firebase 认证
+  firebase.auth().signInWithEmailAndPassword(email, password)
+    .then((userCredential) => {
+      // 登录成功
+      const user = userCredential.user;
+      console.log('登录成功', user);
+      // 检查是否为管理员
+      if (user.isAdmin) {
+        console.log('管理员登录成功');
+        // 执行管理员操作
+      } else {
+        console.log('普通用户登录成功');
+        // 执行普通用户操作
+      }
+    })
+    .catch((error) => {
+      // 登录失败
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      console.error('登录失败', errorCode, errorMessage);
+    });
+}
+```
+
+以下是实现快速排序算法的 Python 伪代码：
+
+```python
+# 快速排序算法伪代码
+def quicksort(arr):
+  if len(arr) <= 1:
+    return arr
+  pivot = arr[len(arr) // 2]
+  left = [x for x in arr if x < pivot]
+  middle = [x for x in arr if x == pivot]
+  right = [x for x in arr if x > pivot]
+  return quicksort(left) + middle + quicksort(right)
+
+# 示例
+arr = [3, 6, 8, 10, 1, 2, 1]
+sorted_arr = quicksort(arr)
+print(sorted_arr)
+```
+
+以上是优化后的代码片段和实现登录流程、快速排序算法的伪代码。请根据需要选择使用。
